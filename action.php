@@ -1,9 +1,14 @@
 
 <?php
-$age = (int)$_POST['age'];
-$check = false;
+/*Vous devrez créer un formulaire qui vous demandera votre date de naissance et qui
+calculera automatiquement en fonction de la date du jour si vous pouvez ou non
+accéder au site de campagne. Toujours avec une window alert. */
 
-if ($age >= 18) {
+$dob = $_POST['date'];
+$now = date('Y');
+$diff = $now - $dob;
+
+if ($diff >= 18) {
     echo "<script type=\"text/javascript\"> alert(\"Vous avez l'âge requis pour accéder à ce site. Bienvenue.\");
     window.location.href='accueil.html'; </script>";
     
