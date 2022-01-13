@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.main-title {
+    margin: 2% auto;
+    text-align: center;
+    height: max-content;
+}
+
+.left {
+    width: 50%;
+}
+.right {
+    background-color: rgb(35, 105, 211);
+    width: 50%;
+    color : whitesmoke;
+}
+
+.bandeau {
+    text-align: center;
+    font-size: x-large;
+}
+
+form {
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 33% auto;
+}
+
+
