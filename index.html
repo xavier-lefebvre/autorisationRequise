@@ -25,18 +25,20 @@
       </div>
 
       <div class="right">
-        <form action="action.php" method="post">
+        <form action="action.js" method="post">
           <p class="bandeau">
             Pour accéder au site officiel de Jean, vous devez avoir au moins 18
             ans.
           </p>
 
-          <p>Votre âge : <input type="text" name="age" /></p>
-          <p><input type="submit" value="OK" /></p>
+          <p>Votre âge : <input type="text" name="age" id="age" /></p>
+          <button type="button" onclick="redirection()">Validez</button>
+
         </form>
       </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="action.js"></script>
   </body>
 </html>
